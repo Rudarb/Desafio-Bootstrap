@@ -1,113 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="icon" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
-    <header> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"><span>ACADEMIA</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                <a class="nav-link" href="#modalidades">Modalidades</a>
+                <a class="nav-link" href="#precos">Preços</a>
+                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#contato">Contato</a>
+                <a href="#precos" class="btn btn-accent ms-lg-3 mt-2 mt-lg-0">Matricule-se</a>
               </div>
             </div>
           </div>
         </nav>
     </header>
 
-    <section id="1">
-        <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/gym.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="img">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption-custom">
+                        <h1>DOMINE SUA FORÇA</h1>
+                        <p>Treinamento de alta intensidade para resultados extremos.</p>
+                        <a href="#precos" class="btn btn-accent btn-lg">COMECE AGORA</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="img">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption-custom">
+                        <h1>SUPERE SEUS LIMITES</h1>
+                        <p>Estrutura completa e profissionais especializados para acelerar sua evolução.</p>
+                        <a href="#precos" class="btn btn-accent btn-lg">COMECE AGORA</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="img">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption-custom">
+                        <h1>DISCIPLINA É PODER</h1>
+                        <p>Do tatame à musculação, cada modalidade foi pensada para te transformar.</p>
+                        <a href="#precos" class="btn btn-accent btn-lg">COMECE AGORA</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-        <div class="carousel-item">
-          <img src="img/gym.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/gym.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     </section>
 
-    <main class="d-flex justify-content-around flex-wrap">
-      <div class="card" style="width: 18rem;">
-        <img src="img/gym.png" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card with stretched link</h5>
-            <a href="#" class="stretched-link">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
-          </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/gym.png" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card with stretched link</h5>
-            <a href="#" class="stretched-link">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
-          </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/gym.png" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card with stretched link</h5>
-            <a href="#" class="stretched-link">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
-          </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/gym.png" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card with stretched link</h5>
-            <a href="#" class="stretched-link">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
-          </div>
-      </div>
-    </main>
+    <section id="modalidades" class="section-dark">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>MODALIDADES</h2>
+                <div class="heading-underline mx-auto"></div>
+            </div>
 
-    
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card modality-card h-100">
+                        <img src="..." class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="..."></i> KARATE</h5>
+                            <p class="card-text">Foco em artes marciais tradicionais, disciplina e precisão técnica.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card modality-card h-100">
+                        <img src="..." class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="..."></i> MUSCULAÇÃO</h5>
+                            <p class="card-text">Equipamentos modernos e orientação especializada para resultados massivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card modality-card h-100">
+                        <img src="..." class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="..."></i> LUTA LIVRE</h5>
+                            <p class="card-text">Grappling dinâmico, quedas e técnicas avançadas de defesa pessoal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card modality-card h-100">
+                        <img src="..." class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="..."></i> ZUMBA</h5>
+                            <p class="card-text">Dança e fitness de alta energia para queima calórica total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <section id="contato" class="section-darker">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>CONTATO & LOCALIZAÇÃO</h2>
+                <div class="heading-underline mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="panel h-100">
+                        <p class="panel-eyebrow">MANDE UMA MENSAGEM</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="assunto" class="form-label">Assunto</label>
+                                    <select id="assunto" class="form-select">
+                                        <option selected>Selecione uma opção</option>
+                                        <option>Matrícula</option>
+                                        <option>Aula experimental</option>
+                                        <option>Dúvidas sobre planos</option>
+                                        <option>Outro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="promo">
+                                        <label class="form-check-label" for="promo">
+                                            Desejo receber novidades e promoções
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-accent">ENVIAR MENSAGEM</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                    <div class="map-placeholder flex-grow-1 d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-accent"><i class="bi bi-geo-alt-fill"></i> VER NO MAPA</a>
+                    </div>
+                    <div class="panel">
+                        <p class="panel-eyebrow"><i class="bi bi-clock-fill"></i> HORÁRIO DE FUNCIONAMENTO</p>
+                        <ul class="hours-list list-unstyled mb-0">
+                            <li><span>Segunda a Sexta</span><span class="hours-time">06:00 - 23:00</span></li>
+                            <li><span>Sábados</span><span class="hours-time">08:00 - 20:00</span></li>
+                            <li><span>Domingos e Feriados</span><span class="hours-time">08:00 - 14:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-dark">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>PERGUNTAS FREQUENTES</h2>
+                <div class="heading-underline mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    QUAL O HORÁRIO DE FUNCIONAMENTO?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Funcionamos de segunda a sexta das 06h às 23h, aos sábados das 08h às 20h e aos domingos e feriados das 08h às 14h.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    VOCÊS OFERECEM PERSONAL TRAINER?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim. O acompanhamento com personal trainer está incluso no plano Elite e disponível como serviço avulso para os demais planos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    HÁ PASSE PARA VISITANTES?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oferecemos uma aula experimental gratuita para novos alunos conhecerem a estrutura e as modalidades antes de se matricular.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    QUAL A POLÍTICA DE CANCELAMENTO?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O cancelamento pode ser solicitado a qualquer momento na recepção, sem multa, respeitando o aviso prévio de 30 dias.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precos" class="section-darker">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>PLANOS & PREÇOS</h2>
+                <div class="heading-underline mx-auto"></div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-borderless pricing-table align-middle">
+                    <thead>
+                        <tr>
+                            <th>PLANO</th>
+                            <th>FEATURES</th>
+                            <th class="text-end">PREÇO MENSAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="plan-name">BASIC</td>
+                            <td>Acesso à área de musculação em horário restrito (06h às 16h), vestiários.</td>
+                            <td class="text-end plan-price">R$ 89,90</td>
+                        </tr>
+                        <tr>
+                            <td class="plan-name">PRO</td>
+                            <td>Acesso livre à musculação, 2 aulas semanais de modalidades, avaliação física mensal.</td>
+                            <td class="text-end plan-price">R$ 149,90</td>
+                        </tr>
+                        <tr class="plan-highlight">
+                            <td class="plan-name">ELITE</td>
+                            <td>Acesso total livre, todas as modalidades, personal trainer 1x semana, toalha grátis.</td>
+                            <td class="text-end plan-price">R$ 229,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand" href="#">ACADEMIA</a>
+                    <p class="text-muted mt-2 mb-0">Treinamento de alta performance</p>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h6>Institucional</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h6>Academia</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Regras da Academia</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<footer>
-
-</footer>
 </html>
